@@ -2,6 +2,14 @@
 
 `qsar-pls-regression`은 PLS(Partial Least Squares) 회귀를 사용해 Mpro / RdRp 분자 데이터셋을 비교하는 Jupyter 실험 모음입니다.
 
+## 이 프로젝트가 할 수 있는 것 (What this project can do)
+
+- **PLS 회귀 모델 학습**: 분자 특성(descriptor) 데이터를 입력으로 받아 결합 에너지(binding energy)를 예측하는 PLS 회귀 모델을 학습합니다.
+- **다양한 데이터셋 지원**: Mpro(665개), RdRp(29, 76, 240개) 등 여러 크기의 분자 데이터셋에 대해 실험을 수행합니다.
+- **Train/Test 분할 평가**: 데이터를 학습/테스트 세트로 분할하고 RMSE, R², MSE, RMRPE 등의 지표로 모델 성능을 평가합니다.
+- **교차 검증(Cross-Validation)**: k-fold 교차 검증(기본 cv=5)으로 모델의 일반화 성능을 평가합니다.
+- **진단 플롯 생성**: Actual vs. Predicted, Parity Plot, Residuals, Bland-Altman, Hexbin Density, PLS Score Plot, Feature Importance 등 다양한 시각화 결과물을 PNG 파일로 저장합니다.
+
 ## 폴더 구성
 
 - `Mpro-pls-665-traintest.ipynb`
